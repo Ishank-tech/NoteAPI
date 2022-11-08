@@ -1,10 +1,10 @@
 const noteModel = require("../models/note")
 
 const createNote = async (req, res) => {
-    const {title, desc} = req.body
+    const {title, description} = req.body
     const newNote = new noteModel({
         title:title,
-        description:desc,
+        description:description,
         userId:req.userId
     })
 
